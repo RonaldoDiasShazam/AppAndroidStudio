@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.aluno.agendacalendario.MainActivity"
+
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Calendario"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textColor="#00b7ff"
+        android:background="#ffffff" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputtype="date"
+        android:ems="20"
+        android:id="@+id/campoFecha"
+        android:layout_gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verificar Data"
+        android:id="@+id/botonFecha"
+        android:layout_alignParentBottom="true"
+        android:background="#a0d8fb"
+        android:textSize="29dp"
+        android:textColor="#605f5f"
+        android:onClick="mostrarCalendario" />
+
+</LinearLayout>
